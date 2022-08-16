@@ -1,1 +1,218 @@
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  ol li,
+  ul li {
+    list-style: none;
+  }
+
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  img {
+    vertical-align: top;
+  }
+
+  html,
+  body {
+    font-size: 14px;
+    line-height: 1;
+    height: 100%;
+    font-family: Arial; 
+    background: #E5E5E5;
+  }
+
+  input[type="text"],
+  input[type="search"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+  }
+
+  input::-webkit-search-decoration,
+  input::-webkit-search-cancel-button,
+  input::-webkit-search-results-button,
+  input::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
 /* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+
+.products__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 30px 0 30px;
+}
+
+.products__title {
+  margin: 0 0 40px 0;
+}
+
+.title { 
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 72px;
+  text-transform: uppercase;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.list-item {
+  box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+  background: #FFFFFF;
+}
+
+.list-item__container {
+  position: relative;
+}
+
+.list-item__stickers{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-item__sticker{
+  position: absolute; 
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2F2F2F;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-item__sticker_novelty{
+  background: #FDCFF3;
+  max-width: 110px;
+  left: 17px;
+  top: 16px;
+}
+
+.list-item__sticker_last{
+  background: #FFCF56;
+  max-width: 136px;
+  left: 143px;
+  top: 17px;
+}
+
+.list-item__image {
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+}
+
+.list-item__content{
+  display: flex;
+  flex-direction: column;
+  max-width: 332px;
+  min-height: 268px;
+  margin: 0 auto;
+}
+
+.list-item__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2F2F2F;
+  margin: 24px 0 17px 0;
+}
+
+.list-item__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2F2F2F;
+  flex: 1 1 auto;
+}
+
+.list-item__button {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin: 10px 0 24px 0;
+  border: 2px solid #42940F;
+  border-radius: 8px;
+  height: 48px;
+  color: #42940F;
+  transition: all ease 1s;
+}
+
+.list-item__button:hover{
+  color: #FFFFFF;
+  background-color: #42940F;
+  border: none;
+}
+
+.list-item__button:active{
+  color: #FFFFFF;
+  background-color: #1F5200;
+  border: none;
+}
+
+.list-item__button.list-item__button_disabled {
+  color: #FFFFFF;
+  background-color: #4E4E4E; 
+  border: none;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .title{
+    text-align: center;
+  }
+  .list-item__container {
+    min-height: auto;
+  }
+  .list-item__content{
+    padding: 0 10px;
+  }
+  .list-item__sticker_last{
+    left: 17px;
+    top: 50px;
+  }
+}
