@@ -7,16 +7,16 @@ const buttonHiddenContent = document.querySelector(
 );
 const content = document.querySelector(".collapsible__content");
 
+buttonVisibleContent.style.position = "absolute";
+
 let isOpen = false;
 
 const visibleEffect = [
   {
     opacity: 0,
-    transform: "translateY(-50px)",
   },
   {
     opacity: 1,
-    transform: "translateY(0px)",
   },
 ];
 
