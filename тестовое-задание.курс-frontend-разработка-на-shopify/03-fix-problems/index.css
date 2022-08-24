@@ -1,12 +1,14 @@
+* {
+    margin: auto;
+}
+
 body {
-    margin: 0;
     background: cornsilk;
     font-family: sans-serif;
 }
 
 .article {
     max-width: 680px; 
-    margin: 0 auto;
     padding: 24px;
 }
 
@@ -25,9 +27,9 @@ body {
     font-family: serif;
 }
 
-.article__figure{
-    margin-left: auto;
-    margin-right: auto;
+.article p,
+.article__figure {
+    margin: 16px 0;
 }
 
 .figure__image{
