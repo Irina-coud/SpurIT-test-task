@@ -7,26 +7,14 @@
     box-sizing: border-box;
   }
 
-  ol li,
-  ul li {
-    list-style: none;
-  }
-
   a,
-  a:visited {
-    text-decoration: none;
-  }
-
+  a:visited, 
   a:hover {
     text-decoration: none;
   }
 
-  h1,
   h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h3 {
     font-size: inherit;
     font-weight: inherit;
   }
@@ -44,33 +32,11 @@
     background: #E5E5E5;
   }
 
-  input[type="text"],
-  input[type="search"],
-  input[type="email"],
-  input[type="tel"],
-  textarea {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: none;
-  }
-
-  input::-webkit-search-decoration,
-  input::-webkit-search-cancel-button,
-  input::-webkit-search-results-button,
-  input::-webkit-search-results-decoration {
-    display: none;
-  }
-
-  input,
-  button,
-  textarea {
+  button {
     font-family: inherit;
     background-color: transparent;
     cursor: pointer;
   }
-
-/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
 
 .products__container {
   display: flex;
@@ -179,7 +145,7 @@
   border-radius: 8px;
   height: 48px;
   color: #42940F;
-  transition: all ease 1s;
+  transition: all ease 0.5s;
 }
 
 .list-item__button:hover{
